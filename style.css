@@ -3,3 +3,68 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #121214;
+  color: white;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: clamp(4rem, 4rem + 10vw,8.8rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#controls {
+  margin-top: 1.6rem;
+  border-radius: 9999px;
+  background: rgba(66, 211, 255, 0.13);
+  padding: 2.2rem 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+
+  width: clamp(10rem, 10rem + 30vw, 22.8rem);
+  height: clamp(8rem, 5rem + 10vw, 10.8rem);
+}
+
+.play svg path,
+.pause svg path,
+.sound-on svg path {
+  fill: #42D3FF;
+}
+
+button svg {
+  width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
+.sound {
+  position: fixed;
+  bottom: 3.2rem; 
+  right: 4rem;
+}
+
